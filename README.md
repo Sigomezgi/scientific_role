@@ -8,6 +8,14 @@ El proyecto se encuentra conformado por los siguientes archivos:
   - clean_data.py: En este archivo se limpia los datos garantizando la estructura de las variables. Como se menciono, el proyecto se realizó simulando una ejecución real, es por esto que este procedimiento se realiza en primer lugar simulando la comunicación con una base de datos que en muchas ocasiones la calidad de los datos no puede ser garantizada.
   - fixture_engineer.py: Este archivo se relaciona con el análisis realizado en variable_analysis.ipynb. En este se realiza la creación de algunas variables y la eliminación de algunas por altos valores de correlación.
   - preprocess_data.py: En este archivo se realiza el procesamiento de los datos antes de evaluarlos en diferentes modelos, en este realiza: Eliminación de outliers que disminuya la capacidad de generalizar, transformaciones de las variables continuas para evitar que altos valores tomen diferentes pesos en los parámetros de los modelos, balanceo de la base de datos de entrenamiento utilizando submuestreo de la clase mayoritaria y transformaciones de la base de datos de evaluación con los parámetros de las transformaciones del entrenamiento.
-  - train_model.py: En este se evaluan 4 modelos: RandomForestClassifier, lightgradientboost, Gradient Boosting classifier y Support vector machine. Se utiliza una grilla de parámetros para encontrar la mejor combinación y se fija un hiperparámetro de validación cruzada igual a 3. La métrica con la que se juzga y se optimiza es el "accuracy" que me permite minimizar los falsos positivos.
+  - ![process](https://user-images.githubusercontent.com/94578395/227862365-5ab343cc-072d-41fb-b905-2af1d0eb369e.png)![process](https://user-images.githubusercontent.com/94578395/227862423-3402c341-dd6c-4396-87fb-c3525ccabe86.png)
+: En este se evaluan 4 modelos: RandomForestClassifier, lightgradientboost, Gradient Boosting classifier y Support vector machine. Se utiliza una grilla de parámetros para encontrar la mejor combinación y se fija un hiperparámetro de validación cruzada igual a 3. La métrica con la que se juzga y se optimiza es el "accuracy" que me permite minimizar los falsos positivos.
 
-El código fue estructurado de manera que sea fácilmente editable en caso de presentar de detectar alguna falla o si se desea realizar un cambio en algunas estrategia de modelo.
+El código fue estructurado de manera que sea fácilmente editable en caso de detectar alguna falla o si se desea realizar un cambio en algunas estrategia de modelo.
+
+## Consideraciones de la base de datos:
+La base de datos present algunas incoherencias entre los posibles valores que se describen en la url y los valores que se otorgan en la base. Es por eso que se opta en no generar estrategias de manipulación de estas. 
+## Consideraciones técnicas:
+Se realizaron dos testeos, uno mas riguroso que otro. El primero aquel que se genera en la validación cruzada de la búsqueda de parámetro, y la segunda más rigurosa es aquella que se prueba sobre datos reales del fénomeno anteriormente adecuados.
+## Flujo:
+![
