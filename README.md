@@ -27,5 +27,22 @@ Se presenta a continuación los resultados de los modelos entrenados.
 | SVC | 0.70 | 0.68 |
 | RFC | 0.72 | 0.73|
 | GBC | 0.72 | 0.712 |
-| LGB | 0.71 | 0.73 |
-| Celda 5-1 | Celda 5-2 | Celda 5-3 |
+| LGB | 0.71 | 0.69 |
+
+El modelo más apto para reconocer defaults en los pagos es el random forest classifier. Debido a que su capacidad de generalización se mantiene en los valores reales de fénomeno, además este modelo cuenta con la característca que no se sobre entrena como se evidencia en los resultados.
+## Futuros trabajos (Mejoras en el modelo).
+ - Hay gran cantidad de variables que son similares pero con rezagos diferentes, es por esto que resulta más adecuado llenar los valores faltantes con las variables análogas a cada cliente y no al comportamiento general de la columna.
+ - Evaluar diferentes estrategias de balanceo.
+ - La carga de los datos debe ser fluida, esto en una comunicación más directa.
+ - Agregar un módulo de selección de variables según el modelo elegido.
+ - En caso de desplegar el modelo generar un módulo para el tratamiento de datos en el testeo.
+## POO.
+ - Para evitar trabajar directamente con los datos, se pueden crear clases con métodos que facilten la reutilización de código para procesarlos mucho más efcientemente.
+ - Debido a la repetición de las líneas de código en el momento de evluar las diferentes parámetros a elegir, resulta más adecuado instanciar una clase que tenga los métodos de la evaluaciín de parámetros.
+ - Al utilizar POO es mucho más práctico para utilizar técnicas de clean code y SOLID.
+
+## Conclusión final.
+
+Durante el presente proyecto no se busco únicamente generar un modelo con métricas de rendimiento, se realizó un esfuerzo por generar un producto de datos que tuviera la capacidad de re entrenar el modelo con la menor intervención posible. Con esto se buscaba detallar la estructuración de código y el manejo de buenas prácticas en programación y en machine learnign
+
+*Simón Gómez Giraldo*
