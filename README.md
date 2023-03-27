@@ -13,7 +13,7 @@ El proyecto se encuentra conformado por los siguientes archivos:
 El código fue estructurado de manera que sea fácilmente editable en caso de detectar alguna falla o si se desea realizar un cambio en algunas estrategia de modelo.
 
 ## Consideraciones de la base de datos:
-La base de datos present algunas incoherencias entre los posibles valores que se describen en la url y los valores que se otorgan en la base. Es por eso que se opta en no generar estrategias de manipulación de estas. 
+La base de datos present algunas incoherencias entre los posibles valores que se describen en la url y los valores que se otorgan en la base. Es por eso que se opta en no generar  estrategias de manipulación sobre algunas variables. 
 ## Consideraciones técnicas:
 Se realizaron dos testeos, uno mas riguroso que otro. El primero aquel que se genera en la validación cruzada de la búsqueda de parámetro, y la segunda más rigurosa es aquella que se prueba sobre datos reales del fénomeno anteriormente adecuados.
 ## Flujo:
