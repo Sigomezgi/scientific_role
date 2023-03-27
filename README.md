@@ -17,5 +17,6 @@ La base de datos present algunas incoherencias entre los posibles valores que se
 ## Consideraciones técnicas:
 Se realizaron dos testeos, uno mas riguroso que otro. El primero aquel que se genera en la validación cruzada de la búsqueda de parámetro, y la segunda más rigurosa es aquella que se prueba sobre datos reales del fénomeno anteriormente adecuados.
 ## Flujo:
-![process](https://user-images.githubusercontent.com/94578395/227863383-39bec8be-9f0d-4785-9306-9cdc1ba512ec.png)
+![process](https://user-images.githubusercontent.com/94578395/227863756-6b3ff3b9-8adc-4eaa-a9ab-f7623b318c97.png)
+
 
