@@ -19,4 +19,13 @@ Se realizaron dos testeos, uno mas riguroso que otro. El primero aquel que se ge
 ## Flujo:
 ![process](https://user-images.githubusercontent.com/94578395/227863756-6b3ff3b9-8adc-4eaa-a9ab-f7623b318c97.png)
 
+## Resultados.
+Se presenta a continuación los resultados de los modelos entrenados.
 
+| Modelo | Accuracy validación cruzada | Accuraccy en evaluación |
+|-----------|-----------|-----------|
+| SVC | 0.70 | 0.68 |
+| RFC | 0.72 | 0.73|
+| GBC | 0.72 | 0.712 |
+| LGB | 0.71 | 0.73 |
+| Celda 5-1 | Celda 5-2 | Celda 5-3 |
